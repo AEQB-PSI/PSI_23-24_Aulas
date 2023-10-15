@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argumentos", "Argumentos\Ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OlaMundo", "OlaMundo\OlaMundo.csproj", "{C3794A2D-2F2F-4297-9789-FAF8A99AD333}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiposVarios", "TiposVarios\TiposVarios.csproj", "{117C940D-2FB7-4F19-963A-C8D8E1961711}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +46,17 @@ Global
 		{C3794A2D-2F2F-4297-9789-FAF8A99AD333}.Release|x64.Build.0 = Release|Any CPU
 		{C3794A2D-2F2F-4297-9789-FAF8A99AD333}.Release|x86.ActiveCfg = Release|Any CPU
 		{C3794A2D-2F2F-4297-9789-FAF8A99AD333}.Release|x86.Build.0 = Release|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Debug|x64.Build.0 = Debug|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Debug|x86.Build.0 = Debug|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Release|x64.ActiveCfg = Release|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Release|x64.Build.0 = Release|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Release|x86.ActiveCfg = Release|Any CPU
+		{117C940D-2FB7-4F19-963A-C8D8E1961711}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
