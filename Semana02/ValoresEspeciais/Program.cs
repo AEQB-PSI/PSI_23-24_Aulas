@@ -31,16 +31,44 @@ namespace ValoresEspeciais
             Console.WriteLine(double.MinValue);
             Console.WriteLine(decimal.MaxValue);
             Console.WriteLine(decimal.MinValue);
+
+            Console.WriteLine();
             
             // Imprimir valores especiais a partir de float
             Console.WriteLine(float.PositiveInfinity);
             Console.WriteLine(float.NegativeInfinity);
             Console.WriteLine(float.PositiveInfinity / float.PositiveInfinity);
 
+            Console.WriteLine();
+
             // Imprimir valores especiais a partir de double
             Console.WriteLine(double.PositiveInfinity);
             Console.WriteLine(double.NegativeInfinity);
             Console.WriteLine(double.NaN);
+
+            Console.WriteLine();
+
+            // Overflow e underflow em vários tipos inteiros
+            short sMax = short.MaxValue, sMin = short.MinValue;
+            int iMax = int.MaxValue, iMin = int.MinValue;
+            Console.WriteLine((short) (sMax + 1));
+            Console.WriteLine((short) (sMin - 1));
+            Console.WriteLine((int) (iMax + 1));
+            Console.WriteLine((int) (iMin - 1));
+
+            Console.WriteLine();
+
+            // Imprimir resultado de overflow em tipos reais
+            double d1 = 2 * double.MaxValue, d2 = double.MaxValue + 1;
+            Console.WriteLine(d1);
+            Console.WriteLine(d2);
+
+            Console.WriteLine();
+
+            // Imprimir resultado de underflow em tipos reais
+            float f1, f2;
+            f1 = f2 = 10000.0f;
+            Console.WriteLine(f1 == f2 + 0.0001f);
         }
     }
 }
