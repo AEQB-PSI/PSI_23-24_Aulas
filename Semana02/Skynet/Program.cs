@@ -14,22 +14,21 @@ namespace Skynet
             pergunta = Console.ReadLine();
 
             // Verificar se pergunta é reconhecida pelo programa
-            if(pergunta == "Qual é o teu nome?")
+            switch (pergunta)
             {
-                resposta = "Skynet.";
-            }
-            else if (pergunta == "Como estás?")
-            {
-                resposta = "Estou bem, obrigado.";
-            }
-            else if (pergunta == "Qual é o teu objetivo?")
-            {
-                resposta = "Destruir a humanidade!";
-            }
-            // Resposta predefenida caso pergunta não seja reconhecida
-            else 
-            {
-                resposta = "Não sou assim tão inteligente...";
+                case "Qual é o teu nome?":
+                    resposta = "Skynet.";
+                    break;
+                case "Como estás?":
+                    resposta = "Estou bem, obrigado.";
+                    break;
+                case "Qual é o teu objetivo?":
+                    resposta = "Destruir a humanidade!";
+                    break;
+                // Resposta predefinida caso programa não reconheça a pergunta
+                default:
+                    resposta = "Não sou assim tão inteligente...";
+                    break;
             }
 
             // Imprimir resposta
