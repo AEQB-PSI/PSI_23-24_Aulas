@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piramide", "Piramide\Pirami
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omissor", "Omissor\Omissor.csproj", "{C5B9C8CC-E87A-4D5F-9C07-AA90578C70EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiDimArray", "BiDimArray\BiDimArray.csproj", "{4BD00FCD-20F0-4BAA-8CB2-DE478CE0409A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C5B9C8CC-E87A-4D5F-9C07-AA90578C70EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5B9C8CC-E87A-4D5F-9C07-AA90578C70EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5B9C8CC-E87A-4D5F-9C07-AA90578C70EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD00FCD-20F0-4BAA-8CB2-DE478CE0409A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD00FCD-20F0-4BAA-8CB2-DE478CE0409A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD00FCD-20F0-4BAA-8CB2-DE478CE0409A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD00FCD-20F0-4BAA-8CB2-DE478CE0409A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
