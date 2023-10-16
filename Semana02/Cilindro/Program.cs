@@ -9,7 +9,6 @@ namespace Cilindro
             // Variáveis para guardar todos os valores
             string sAltura, sRaio;
             double altura, raio, volume, area;
-            double pi = 3.1415926;
 
             Console.WriteLine("Insere a altura e o raio de um cilindro:");
 
@@ -22,8 +21,8 @@ namespace Cilindro
             raio = double.Parse(sRaio);
 
             // Calcula volume e área de superfície
-            volume = pi * (raio * raio) * altura;
-            area = 2 * pi * raio * (raio + altura);
+            volume = Math.PI * (Math.Pow(raio, 2)) * altura;
+            area = 2 * Math.PI * raio * (raio + altura);
 
             // Imprime valores do volume e área do cilindro
             Console.WriteLine();
