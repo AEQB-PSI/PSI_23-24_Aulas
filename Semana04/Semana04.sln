@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPCPerks", "NPCPerks\NPCPerks.csproj", "{77CA7FDB-26BF-4301-BEF4-EECB5C0228D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeiroMetodo", "PrimeiroMetodo\PrimeiroMetodo.csproj", "{BEA7FDB0-1B0E-40A9-B715-F497D714AF7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{77CA7FDB-26BF-4301-BEF4-EECB5C0228D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77CA7FDB-26BF-4301-BEF4-EECB5C0228D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77CA7FDB-26BF-4301-BEF4-EECB5C0228D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA7FDB0-1B0E-40A9-B715-F497D714AF7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA7FDB0-1B0E-40A9-B715-F497D714AF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA7FDB0-1B0E-40A9-B715-F497D714AF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA7FDB0-1B0E-40A9-B715-F497D714AF7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
