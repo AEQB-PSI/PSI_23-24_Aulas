@@ -16,10 +16,17 @@ namespace PrimeiroMetodo
 
             Console.WriteLine();
 
-            // Invocar método ContarAteN duas vezes, com valores diferentes
+            // Invocar método ContarAteN(int) duas vezes, com valores diferentes
             ContarAteN(5);
             Console.WriteLine();
             ContarAteN(7);
+
+            Console.WriteLine();
+
+            // Invocar método ContarAteN(int, int) duas vezes, com valores diferentes
+            ContarAteN(5, 7);
+            Console.WriteLine();
+            ContarAteN(15, 20);
         }
 
         /// <summary>
@@ -39,6 +46,21 @@ namespace PrimeiroMetodo
         {   
             // Ciclo até número dado ser igual a i
             for (int i = 1; i <= n; i++)
+            {
+                // Imprimir um número por linha
+                Console.WriteLine(i);
+            }
+        }
+
+        /// <summary>
+        /// Método para imprimir números de n1 a n2 na consola.
+        /// </summary>
+        /// <param name="n1">Valor inicial passado no método main</param>
+        /// /// <param name="n2">Valor final passado no método main</param>
+        private static void ContarAteN(int n1, int n2)
+        {   
+            // Ciclo até número dado ser igual a i
+            for (int i = n1; i <= n2; i++)
             {
                 // Imprimir um número por linha
                 Console.WriteLine(i);
