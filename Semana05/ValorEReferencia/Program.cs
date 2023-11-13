@@ -15,11 +15,7 @@ namespace ValorEReferencia
             int[] y1 = y0;
 
             // Imprimir valores iniciais de x0 e y0
-            Console.WriteLine($"Valor de x0 = {x0}");
-            Console.Write("Valor de y0 = [ ");
-            foreach (int b in y0) Console.Write($"{b} ");
-            Console.Write("]");
-
+            ImprimirVars(x0, y0);
             Console.WriteLine();
 
             // Alterar valor de x1 e y1
@@ -27,20 +23,22 @@ namespace ValorEReferencia
             y1[1] = 4;
 
             // Voltar a imprimir valores de x0 e y0
-            Console.WriteLine($"Valor de x0 = {x0}");
-            Console.Write("Valor de y0 = [ ");
-            foreach (int b in y0) Console.Write($"{b} ");
-            Console.Write("]");
-
+            ImprimirVars(x0, y0);
             Console.WriteLine();
 
             // Reinicializar y1
             y1 = new int[] { -5, -4, -3 };
 
             // Voltar a imprimir valores de x0 e y0
-            Console.WriteLine($"Valor de x0 = {x0}");
+            ImprimirVars(x0, y0);
+            Console.WriteLine();
+        }
+
+        private static void ImprimirVars(int i, int[] j)
+        {
+            Console.WriteLine($"Valor de x0 = {i}");
             Console.Write("Valor de y0 = [ ");
-            foreach (int b in y0) Console.Write($"{b} ");
+            foreach (int b in j) Console.Write($"{b} ");
             Console.Write("]");
 
             Console.WriteLine();
