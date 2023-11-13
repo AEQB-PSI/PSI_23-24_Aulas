@@ -14,5 +14,18 @@ namespace OMeuJogo
             this.nome = nome;
             vida = 100;
         }
+
+        // Método que retorna nome da instância
+        public string GetNome()
+        {
+            return nome;
+        }
+
+        // Método para danificar instância com valor dado
+        public void Danificar(float dano)
+        {
+            vida -= dano;
+            if (vida < 0) vida = 0;
+        }
     }
 }
