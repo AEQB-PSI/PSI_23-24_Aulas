@@ -64,5 +64,24 @@ namespace OMeuJogo
             // Definir vida a 0 se valor for negativo depois de decrementar
             if (vida < 0) vida = 0;
         }
+
+        // Método para abastecer vida ou escudo de instância com valor dado
+        public void Abastecer(Abastecimento ab, float valor)
+        {
+            // Se tipo de abastecimento for Vida
+            if (ab == Abastecimento.Vida)
+            {
+                vida += valor;
+                // Definir valor limite de vida
+                if( vida > 100) vida = 100;
+            }
+            // Se tipo de abastecimento for Escudo
+            if (ab == Abastecimento.Escudo)
+            {
+                escudo += valor;
+                // Definir valor limite de escudo
+                if (escudo > 100) escudo = 100;
+            }
+        }
     }
 }
