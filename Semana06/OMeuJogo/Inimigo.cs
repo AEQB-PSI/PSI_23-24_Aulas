@@ -9,12 +9,21 @@ namespace OMeuJogo
         private float vida;
         private float escudo;
 
+        // Variável de classe
+        private static int numAbast;
+
         // Construtor com definição do nome da instância
         public Inimigo(string nome)
         {
             SetNome(nome);
             vida = 100;
             escudo = 100;
+        }
+
+        // Construtor de classe
+        static Inimigo()
+        {
+            numAbast = 0;
         }
 
         // Método que retorna nome da instância
@@ -34,6 +43,12 @@ namespace OMeuJogo
         public float GetEscudo()
         {
             return escudo;
+        }
+
+        // Método que retorna número de abastecimentos associados à classe
+        public static int GetNumAbast()
+        {
+            return numAbast;
         }
 
         // Método que especifica novo nome para a instância
@@ -68,6 +83,9 @@ namespace OMeuJogo
         // Método para abastecer vida ou escudo de instância com valor dado
         public void Abastecer(Abastecimento ab, float valor)
         {
+            // Incrementar número de abastecimentos da classe
+            numAbast++;
+            
             // Se tipo de abastecimento for Vida
             if (ab == Abastecimento.Vida)
             {

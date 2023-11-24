@@ -92,6 +92,12 @@ namespace OMeuJogo
                 Console.WriteLine($"\t\tEscudo: {inimigos[i].GetEscudo()}");
                 Console.WriteLine($"\t\tVida: {inimigos[i].GetVida()}");
             }
+
+            Console.WriteLine();
+
+            // Imprimir número total de abastecimentos no decorrer do programa
+            Console.WriteLine(
+                $"Número total de abastecimentos: {Inimigo.GetNumAbast()}");
         }
     }
 }
