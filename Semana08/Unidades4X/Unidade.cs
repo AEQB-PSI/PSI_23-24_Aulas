@@ -2,7 +2,7 @@ using System;
 
 namespace Unidades4X
 {
-    public abstract class Unidade 
+    public abstract class Unidade
     {
         // Variável de instância
         private int movimento;
@@ -12,7 +12,7 @@ namespace Unidades4X
         public abstract float Valor { get; }
 
         // Construtor
-        public Unidade(int movimento, int vida) 
+        public Unidade(int movimento, int vida)
         {
             this.movimento = movimento;
             Vida = vida;
@@ -22,6 +22,11 @@ namespace Unidades4X
         public void Mover()
         {
             Console.WriteLine($"Uma unidade andou {movimento} blocos");
+        }
+
+        public override string ToString() 
+        {
+            return $"\tUnidade tem {Vida} de vida e {Valor} de valor";
         }
     }
 }

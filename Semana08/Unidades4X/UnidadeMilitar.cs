@@ -22,5 +22,10 @@ namespace Unidades4X
         {
             Console.WriteLine($"Unidade atacou {u} com dano {PoderAtaque}");
         }
+
+        public override string ToString() 
+        {
+            return base.ToString() + $"\n\tUnidade tem {PoderAtaque} de poder de ataque e {XP} de XP";
+        }
     }
 }
