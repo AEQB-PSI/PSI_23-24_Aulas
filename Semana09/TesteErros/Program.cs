@@ -14,21 +14,25 @@ namespace TesteErros
           {
             // Código que pode lançar exceções
             i = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Número inserido: {i}");
           }
           catch (FormatException)
           {
-            Console.WriteLine("Valor inserido não está no formato correto");
+            Console.WriteLine("Valor inserido não está no formato correto.");
           }
           catch (OverflowException)
           {
-            Console.WriteLine("Valor inserido é demasiado grande ou pequeno");
+            Console.WriteLine("Valor inserido é demasiado grande ou pequeno.");
           }
           catch (Exception)
           {
-            Console.WriteLine("Ocorreu um erro desconhecido");
+            Console.WriteLine("Ocorreu um erro desconhecido.");
           }
-          
-          Console.WriteLine($"Número inserido: {i}");
+          finally
+          {
+            Console.WriteLine("Obrigado por usares o programa!");
+          }
         }
     }
 }
