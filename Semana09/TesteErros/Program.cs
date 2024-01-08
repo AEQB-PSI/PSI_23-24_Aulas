@@ -15,10 +15,17 @@ namespace TesteErros
             // Código que pode lançar exceções
             i = Convert.ToInt32(Console.ReadLine());
           }
-          catch (FormatException e)
+          catch (FormatException)
           {
-            // Código para tratar exceção
-            Console.WriteLine("Ocorreu o seguinte problema: " + e.Message);
+            Console.WriteLine("Valor inserido não está no formato correto");
+          }
+          catch (OverflowException)
+          {
+            Console.WriteLine("Valor inserido é demasiado grande ou pequeno");
+          }
+          catch (Exception)
+          {
+            Console.WriteLine("Ocorreu um erro desconhecido");
           }
           
           Console.WriteLine($"Número inserido: {i}");
