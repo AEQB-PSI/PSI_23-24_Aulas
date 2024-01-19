@@ -42,25 +42,25 @@ namespace Descompressor
 
             // Instância de FileStream para aceder a ficheiro no caminho especificado,
             // criando o mesmo em modo de escrita
-            FileStream fs = new FileStream(ficheiro + ".gz", FileMode.Create, FileAccess.Write);
-
-            // Instância de GZipStream para decorar o ficheiro com um compressor
-            // para o formato GZip
-            GZipStream gzs = new GZipStream(fs, CompressionLevel.Optimal);
-
-            // Instância de StreamWriter para adaptar o compressor para escrita
-            // em modo de texto
-            StreamWriter sw = new StreamWriter(gzs);
-
-            // Ciclo para ler input do utilizador e escrever no ficheiro
-            // enquanto não for inserida uma string vazia
-            while ((linha = Console.ReadLine()).Length > 0)
+            using (FileStream fs = new FileStream(ficheiro + ".gz", FileMode.Create, FileAccess.Write))
             {
-                sw.WriteLine(linha);
+                // Instância de GZipStream para decorar o ficheiro com um compressor
+                // para o formato GZip
+                using (GZipStream gzs = new GZipStream(fs, CompressionLevel.Optimal))
+                {
+                    // Instância de StreamWriter para adaptar o compressor para escrita
+                    // em modo de texto
+                    using (StreamWriter sw = new StreamWriter(gzs))
+                    {
+                        // Ciclo para ler input do utilizador e escrever no ficheiro
+                        // enquanto não for inserida uma string vazia
+                        while ((linha = Console.ReadLine()).Length > 0)
+                        {
+                            sw.WriteLine(linha);
+                        }
+                    }
+                }
             }
-
-            // Fechar ficheiro
-            sw.Close();
         }
 
         private static void Descomprime()
@@ -70,28 +70,27 @@ namespace Descompressor
 
             // Instância de FileStream para aceder a ficheiro no caminho especificado,
             // abrindo o mesmo em modo de leitura
-            FileStream fs = new FileStream(ficheiro + ".gz", FileMode.Open, FileAccess.Read);
-
-            // Instância de GZipStream para decorar o ficheiro com um descompressor
-            GZipStream gzs = new GZipStream(fs, CompressionMode.Decompress);
-
-            // Instância de StreamReader para adaptar o descompressor para leitura
-            // em modo de texto
-            StreamReader sr = new StreamReader(gzs);
-
-            // Instância de StreamWriter para escrever no novo ficheiro de texto
-            StreamWriter sw = new StreamWriter(ficheiro);
-
-            // Ciclo para ler linhas do ficheiro e escrever na consola
-            // até chegar à última linha do ficheiro
-            while ((linha = sr.ReadLine()) != null)
+            using (FileStream fs = new FileStream(ficheiro + ".gz", FileMode.Open, FileAccess.Read))
             {
-                Console.WriteLine(linha);
-            }
+                // Instância de GZipStream para decorar o ficheiro com um descompressor
+                using (GZipStream gzs = new GZipStream(fs, CompressionMode.Decompress))
+                {
+                    // Instância de StreamReader para adaptar o descompressor para leitura
+                    // em modo de texto
+                    using (StreamReader sr = new StreamReader(gzs))
 
-            // Fechar ficheiros
-            sr.Close();
-            sw.Close();
+                    // Instância de StreamWriter para escrever no novo ficheiro de texto
+                    using (StreamWriter sw = new StreamWriter(ficheiro))
+                    {
+                        // Ciclo para ler linhas do ficheiro e escrever na consola
+                        // até chegar à última linha do ficheiro
+                        while ((linha = sr.ReadLine()) != null)
+                        {
+                            Console.WriteLine(linha);
+                        }
+                    }
+                }
+            }
         }
     }
 }
