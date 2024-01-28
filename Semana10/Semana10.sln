@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Descompressor", "Descompressor\Descompressor.csproj", "{F2606ED2-AD5D-4634-9C9F-8AD310184AF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMeuJogoMVC", "OMeuJogoMVC\OMeuJogoMVC.csproj", "{5481616D-C35D-47ED-8636-055E03A94DF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{F2606ED2-AD5D-4634-9C9F-8AD310184AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2606ED2-AD5D-4634-9C9F-8AD310184AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2606ED2-AD5D-4634-9C9F-8AD310184AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5481616D-C35D-47ED-8636-055E03A94DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5481616D-C35D-47ED-8636-055E03A94DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5481616D-C35D-47ED-8636-055E03A94DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5481616D-C35D-47ED-8636-055E03A94DF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
